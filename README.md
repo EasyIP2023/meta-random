@@ -5,10 +5,10 @@ One may one find use out of such madness :).
 
 **Adding the meta-random layer to your build**
 
-``sh
-https://github.com/EasyIP2023/meta-random
-``
+```sh
+$ git clone https://github.com/EasyIP2023/meta-random
+```
 
-``sh
-bitbake-layers add-layer meta-random
-``
+```sh
+$ bitbake-layers add-layer meta-random
+```
