@@ -1,0 +1,11 @@
+--- lib/Makefile.old	2021-09-21 01:11:43.049739097 +0000
++++ lib/Makefile	2021-09-21 01:12:40.443385349 +0000
+@@ -128,7 +128,7 @@
+ 	rm -f $@
+ 	$(SYMLINK) $< $@
+ libnetpbm.$(NETPBMLIBSUFFIX).$(MAJ).$(MIN): $(LIBOBJECTS) $(LIBOBJECTS_X)
+-	$(LD) $(LDSHLIB) -o $@ $(LIBOBJECTS) $(LIBOBJECTS_X) \
++	$(LD) $(LDFLAGS) $(LDSHLIB) -o $@ $(LIBOBJECTS) $(LIBOBJECTS_X) \
+           $(SHLIB_CLIB) -lm $(LADD)
+ endif
+ 
